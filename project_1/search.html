@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="flights.js"></script>
+    <script src="searcher.js"></script>
+    <script src="veryscript.js"></script>
+
+    <title>Поиск рейса</title>
+</head>
+<body>
+<div class="header">Расписание полётов</div>
+<div class="subheader">Поиск рейса</div>
+<hr>
+<div class="subheader"><a href="arrivals.html">Прибывающие самолёты</a> / <a href="departures.html">Вылетающие самолёты</a> / <a href="delayed.html">Задерживающиеся самолёты</a></div>
+<hr>
+<input id="number" placeholder="Номер рейса">
+<button onclick="showFlight();">Искать</button>
+<table class="zebra" id="flightPlace" border="4" id="timetable">
+    <thead>
+    <tr>
+        <th>Вылет</th>
+        <th>Назначение</th>
+        <th>Коды рейса</th>
+        <th>Терминал</th>
+        <th>Состояние</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+</body>
+</html>

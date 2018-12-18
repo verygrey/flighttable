@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Вылетающие самолёты</title>
+</head>
+<body>
+<div class="header">Расписание полётов</div>
+<div class="subheader">Вылетающие самолёты</div>
+<hr>
+<div class="subheader"><a href="arrivals.html">Прибывающие самолёты</a> / <a href="delayed.html">Задерживающиеся самолёты</a> / <a href="search.html">Поиск рейса</a></div>
+<hr>
+<table class="zebra" border="4" id="timetable">
+    <thead>
+    <tr>
+        <th>Вылет</th>
+        <th>Назначение</th>
+        <th>Коды рейса</th>
+        <th>Терминал</th>
+        <th>Состояние</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<script type="text/javascript" src="flights.js"></script>
+<script type="text/javascript" src="veryscript.js"></script>
+<script>
+    setTimeTable('departures');
+</script>
+</body>
+</html>
